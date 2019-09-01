@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <trial-kit/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TrialKit from './layout/TrialKit.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    TrialKit
   }
 }
 </script>
