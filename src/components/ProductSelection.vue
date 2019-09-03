@@ -1,7 +1,7 @@
 <template>
   <section id="productSelection" class="bg-white">
     <div class="flex flex-direction-row section-container">
-      <div style="position: relative">
+      <div class="position-relative">
         <img
           class="oekotex-logo"
           src="@/assets/oekotex_de.png"
@@ -20,7 +20,8 @@
         <div class="gap-bottom-1 flex flex-direction-row text-align-center">
           <div
             class="option-trial-kit"
-            v-for="trialKit in trialKits" :key="trialKit.index"
+            v-for="trialKit in trialKits"
+            :key="trialKit.index"
             :class="{'option-trial-kit__active': trialKit.active}"
             @click="selectKit(trialKit.index)"
           >
@@ -46,65 +47,22 @@
 <script>
   export default {
     name: 'ProductSelection',
-    data () {
-      return {
-        trialKits: [
-          {
-            index: 1,
-            description: '(2-3KG)',
-            img: {
-              src: require('@/assets/lillydoo-trial-kit-10.jpg'),
-              alt: 'Lillydoo Testpaket mit Windeln in Größe 1 und 15 Feuchttüchern'
-            },
-            active: true
-          },
-          {
-            index: 2,
-            description: '(3-4KG)',
-            img: {
-              src: require('@/assets/lillydoo-trial-kit-20.jpg'),
-              alt: 'Lillydoo Testpaket mit Windeln in Größe 2 und 15 Feuchttüchern'
-            },
-            active: false
-          },
-          {
-            index: 3,
-            description: '(4-7KG)',
-            img: {
-              src: require('@/assets/lillydoo-trial-kit-30.jpg'),
-              alt: 'Lillydoo Testpaket mit Windeln in Größe 3 und 15 Feuchttüchern'
-            },
-            active: false
-          },
-          {
-            index: 4,
-            description: '(7-10KG)',
-            img: {
-              src: require('@/assets/lillydoo-trial-kit-40.jpg'),
-              alt: 'Lillydoo Testpaket mit Windeln in Größe 4 und 15 Feuchttüchern'
-            },
-            active: false
-          },
-          {
-            index: 5,
-            description: '(10-12KG)',
-            img: {
-              src: require('@/assets/lillydoo-trial-kit-50.jpg'),
-              alt: 'Lillydoo Testpaket mit Windeln in Größe 5 und 15 Feuchttüchern'
-            },
-            active: false
-          }
-        ]
-      }
-    },
-    computed: {
-      selectedKit () {
-        return this.trialKits.find(kit => kit.active)
-      }
+    props: {
+      selectedKit: {
+        index: Number,
+        description: String,
+        img: {
+          src: String,
+          alt: String
+        },
+        active: Boolean,
+        content: Object
+      },
+      trialKits: Array
     },
     methods: {
       selectKit (trialKitIndex) {
-        this.trialKits.map(kit => kit.active = trialKitIndex === kit.index)
+        this.$emit('updateDetailsContent', trialKitIndex)
       }
     }
   }

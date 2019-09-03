@@ -4,6 +4,7 @@ import VueScrollTo from 'vue-scrollto'
 
 Vue.config.productionTip = false
 
+// VueScrollTo config from docs
 Vue.use(VueScrollTo, {
   container: "body",
   duration: 900,

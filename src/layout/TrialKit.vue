@@ -1,9 +1,16 @@
 <template>
   <div>
     <product-intro/>
-    <product-selection></product-selection>
-    <product-tips></product-tips>
-    <product-details></product-details>
+    <product-selection
+      :selectedKit="selectedKit"
+      :trialKits="trialKits"
+      v-on:updateDetailsContent="updateDetailsContent"
+    />
+    <product-tips/>
+    <product-details
+      :diaper="selectedKit.content.diaper"
+      :towel="selectedKit.content.towel"
+    />
   </div>
 </template>
 <script>
@@ -12,6 +19,8 @@
   import ProductSelection from '@/components/ProductSelection'
   import ProductTips from '@/components/ProductTips'
 
+  import { trialKits } from './const.js'
+
   export default {
     name: 'TrialKit',
     components: {
@@ -19,6 +28,21 @@
       ProductDetails,
       ProductSelection,
       ProductTips
+    },
+    data () {
+      return {
+        trialKits: trialKits
+      }
+    },
+    computed: {
+      selectedKit () {
+        return this.trialKits.find(kit => kit.active)
+      }
+    },
+    methods: {
+      updateDetailsContent (trialKitIndex) {
+        this.trialKits.map(kit => kit.active = trialKitIndex === kit.index)
+      }
     }
   }
 </script>

@@ -1,21 +1,21 @@
 .uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
-.flex{
-  display: flex;
+.flex {
+    display: flex;
 }
 
 .flex-direction-row {
-  flex-direction: row;
+    flex-direction: row;
 }
 
 .flex-direction-col {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .flex-nowrap {
-  flex-wrap: nowrap;
+    flex-wrap: nowrap;
 }
 
 .text-align-center {
@@ -28,4 +28,8 @@
 
 .flex-grow-1 {
     flex-grow: 1;
+}
+
+.position-relative {
+    position: relative;
 }

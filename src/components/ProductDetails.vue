@@ -6,36 +6,30 @@
     <div class="flex flex-direction-row flex-nowrap section-container">
       <div class="flex flex-direction-row flex-nowrap">
         <div>
-          <img src="@/assets/lillydoo-little-blowballs-design-preview-tp.jpg">
+          <img :src="diaper.img">
         </div>
         <div class="flex flex-direction-col flex-nowrap">
           <div>
-            <h3>10 LILLYDOO WINDELN</h3>
+            <h3>{{diaper.title}}</h3>
           </div>
           <ul>
-            <li>
-              0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz
-            </li>
-            <li>
-              Extra weich und super bequem
+            <li v-for="detail in diaper.details" :key="detail.title">
+              {{detail}}
             </li>
           </ul>
         </div>
       </div>
       <div class="flex flex-direction-row flex-nowrap">
         <div>
-          <img src="@/assets/water-wipes-15-small.jpg">
+          <img :src="towel.img">
         </div>
         <div class="flex flex-direction-col flex-nowrap">
           <div>
-            <h3>15 SENSITIVE FEUCHTTÜCHER</h3>
+            <h3>{{towel.title}}</h3>
           </div>
           <ul>
-            <li>
-              0 % Parfüme & PEGs, 100 % biologisch abbaubar
-            </li>
-            <li>
-              Extra dickes und kompostierbares Tuch
+            <li v-for="detail in towel.details" :key="detail.title">
+              {{detail}}
             </li>
           </ul>
         </div>
@@ -46,6 +40,18 @@
 
 <script>
   export default {
-    name: 'ProductDetails'
+    name: 'ProductDetails',
+    props: {
+      diaper: {
+        img: String,
+        title: String,
+        details: Array
+      },
+      towel: {
+        img: String,
+        title: String,
+        details: Array
+      }
+    }
   }
 </script>

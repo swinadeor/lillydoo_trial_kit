@@ -2,60 +2,62 @@
 $gap-size: $gap;
 $gap-max-amount: 7;
 @function gap($n-amount) {
-  @return #{$gap-size * $n-amount};
+    @return #{$gap-size * $n-amount};
 }
 
 // Fix to prevent collapsing of margins
 // http://www.sitepoint.com/collapsing-margins/
 @mixin prevent-collapsing-margins {
 
-  &:before,
-  &:after {
-    content: '';
-    display: table;
-  }
+    &:before,
+    &:after {
+        content: '';
+        display: table;
+    }
 }
+
 @mixin gap-classes {
-  @for $n from 1 through $gap-max-amount {
-    // Gap
-    // example: '<div class="gap-1"></div>'
+    @for $n from 1 through $gap-max-amount {
+        // Gap
+        // example: '<div class="gap-1"></div>'
 
-    .gap-#{$n} {
-      @include prevent-collapsing-margins;
-      margin: gap($n);
+        .gap-#{$n} {
+            @include prevent-collapsing-margins;
+            margin: gap($n);
+        }
+
+        // Gap top
+        // example: '<div class="gap-top-1"></div>'
+
+        .gap-top-#{$n} {
+            @include prevent-collapsing-margins;
+            margin-top: gap($n);
+        }
+
+        // Gap right
+        // example: '<div class="gap-right-1"></div>'
+
+        .gap-right-#{$n} {
+            @include prevent-collapsing-margins;
+            margin-right: gap($n);
+        }
+
+        // Gap bottom
+        // example: '<div class="gap-bottom-1"></div>'
+
+        .gap-bottom-#{$n} {
+            @include prevent-collapsing-margins;
+            margin-bottom: gap($n);
+        }
+
+        // Gap left
+        // example: '<div class="gap-left-1"></div>'
+
+        .gap-left-#{$n} {
+            @include prevent-collapsing-margins;
+            margin-left: gap($n);
+        }
     }
-
-    // Gap top
-    // example: '<div class="gap-top-1"></div>'
-
-    .gap-top-#{$n} {
-      @include prevent-collapsing-margins;
-      margin-top: gap($n);
-    }
-
-    // Gap right
-    // example: '<div class="gap-right-1"></div>'
-
-    .gap-right-#{$n} {
-      @include prevent-collapsing-margins;
-      margin-right: gap($n);
-    }
-
-    // Gap bottom
-    // example: '<div class="gap-bottom-1"></div>'
-
-    .gap-bottom-#{$n} {
-      @include prevent-collapsing-margins;
-      margin-bottom: gap($n);
-    }
-
-    // Gap left
-    // example: '<div class="gap-left-1"></div>'
-
-    .gap-left-#{$n} {
-      @include prevent-collapsing-margins;
-      margin-left: gap($n);
-    }
-  }
 }
+
 @include gap-classes;
