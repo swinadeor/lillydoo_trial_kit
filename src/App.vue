@@ -5,16 +5,16 @@
 </template>
 
 <script>
-import TrialKit from './layout/TrialKit.vue'
+  import TrialKit from './layout/TrialKit.vue'
 
-export default {
-  name: 'app',
-  components: {
-    TrialKit
+  export default {
+    name: 'app',
+    components: {
+      TrialKit
+    }
   }
-}
 </script>
 
 <style lang="scss">
-@import 'src/styles/main.scss';
+  @import 'src/styles/main.scss';
 </style>

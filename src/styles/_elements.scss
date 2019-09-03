@@ -1,119 +1,66 @@
 body {
-  background: #fff;
-  color: #000;
-  cursor: auto;
-  font-family: cera_proregular,Helvetica,Roboto,Arial,sans-serif; // TODO: check out the font
-  font-style: normal;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  text-align: center;
+    background: #fff;
+    color: #000;
+    cursor: auto;
+    font-family: cera_proregular, Helvetica, Roboto, Arial, sans-serif; // TODO: check out the font
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
 }
 
 h1 {
-  font-family: Museo-300,Helvetica,Roboto,Arial,sans-serif;
-  font-size: 2.625rem;
-  line-height: 1.1;
-  margin-top: 0;
-  margin-bottom: 1rem;
+    font-family: Museo-300, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 2.625rem;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
-.section {
-  padding: 1.25rem 0;
-  &__header {
+.section-container {
     padding: 2rem 0 2rem 0;
     margin: 0 auto;
     max-width: 80rem;
     width: 100%;
-  }
+}
+
+.section {
+    padding: 1.25rem 0;
+    &__header {
+        padding: 2rem 0 2rem 0;
+        margin: 0 auto;
+        max-width: 80rem;
+        width: 100%;
+    }
+}
+
+.oekotex-logo {
+    top: 10%;
+    left: 9%;
+    width: 27%;
+    position: absolute;
 }
 
 .product-intro-background {
-  display: flex;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 42rem;
-  justify-content: flex-end;
-  background-image: url(~@/assets/header-trialbox-desktop.jpg);
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 42rem;
+    justify-content: flex-end;
+    background-image: url(~@/assets/header-trialbox-desktop.jpg);
 }
 
-.button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-color: $c-lillydoo;
-  border-radius: 0;
-  border-color: $c-light-lillydoo;
-  border-style: solid;
-  border-width: 0;
-  cursor: pointer;
-  font-family: cera_promedium,Helvetica,Roboto,Arial,sans-serif;
-  font-weight: 400;
-  line-height: normal;
-  margin: 0 0 2rem;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  padding: 1.6rem 3.2rem 1.7rem 3.2rem;
-  font-size: 1.6rem;
-  color: #fff;
-  transition: background-color .3s ease-out
+.info-overlay {
+    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+    width: 31.25rem;
+    margin-right: 4rem;
+    align-self: center;
+    justify-self: right;
 }
-
-.button-overlay {
-  //-webkit-appearance: none;
-  //-moz-appearance: none;
-  //border-radius: 0;
-  //border-style: solid;
-  //border-width: 0;
-  //cursor: pointer;
-  //font-family: cera_promedium,Helvetica,Roboto,Arial,sans-serif;
-  //font-weight: 400;
-  //line-height: normal;
-  //margin: 0 0 2rem;
-  //position: relative;
-  //text-align: center;
-  //text-decoration: none;
-  //display: inline-block;
-  //padding: 1.6rem 3.2rem 1.7rem 3.2rem;
-  //font-size: 1.6rem;
-  //background-color: #00afab;
-  //border-color: #99dfdd;
-  //color: #fff;
-  //transition: background-color .3s ease-out;
-  //max-width: 18.1rem;
-
-  margin-top: 2rem;
-  max-width: 18.1rem;
-  margin-bottom: 1rem;
-  display: block;
-  padding: 0 18px;
-  min-width: 0;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.063rem;
-  height: 45px;
-  text-transform: uppercase;
-  letter-spacing: 0;
-  -webkit-appearance: none;
-  border-radius: 0;
-  border-style: solid;
-  border-width: 0;
-  cursor: pointer;
-  font-weight: 400;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  background-color: #00afab;
-  border-color: #99dfdd;
-  color: #fff;
-  transition: background-color .3s ease-out;
-}
-

@@ -1,0 +1,120 @@
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: $c-lillydoo;
+  border: 0 solid $c-light-lillydoo;
+  //border-color: $c-light-lillydoo;
+  //border-style: solid;
+  //border-width: 0;
+  cursor: pointer;
+  font-family: cera_promedium,Helvetica,Roboto,Arial,sans-serif;
+  //font-weight: 400;
+  //line-height: normal;
+  //margin: 0 0 2rem;
+  //position: relative;
+  text-align: center;
+  //text-decoration: none;
+  display: inline-block;
+  //padding: 1.6rem 3.2rem 1.7rem 3.2rem;
+  padding: 0 20px;
+  font-size: 1.063rem;
+  height: 45px;
+  min-width: 16rem;
+  line-height: 2.8;
+  //font-size: 1.6rem;
+  color: #fff;
+  transition: background-color .3s ease-out;
+
+  &:hover {
+    background-color: $c-light-lillydoo;
+  }
+}
+
+.option-trial-kit {
+  background-color: $c-white;
+  border: 1px solid #7c7c7c;
+  text-align: center;
+  padding: 7px 5px 2px 5px;
+  color: #7c7c7c;
+  margin-right: 10px;
+  transition: background-color .15s ease-out;
+
+  &__active {
+    background-color: $c-lillydoo;
+    border: 1px solid $c-lillydoo;
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: $c-lillydoo;
+    cursor: pointer;
+    border: 1px solid $c-lillydoo;
+    color: #fff;
+  }
+}
+
+a {
+    text-decoration: none;
+    color: $c-lillydoo;
+    &:visited {
+        color: $c-lillydoo;
+    }
+    &:hover {
+        color: $c-dark-lillydoo;
+    }
+    &:active {
+        color: $c-lillydoo;
+    }
+}
+
+.button-overlay {
+  //-webkit-appearance: none;
+  //-moz-appearance: none;
+  //border-radius: 0;
+  //border-style: solid;
+  //border-width: 0;
+  //cursor: pointer;
+  //font-family: cera_promedium,Helvetica,Roboto,Arial,sans-serif;
+  //font-weight: 400;
+  //line-height: normal;
+  //margin: 0 0 2rem;
+  //position: relative;
+  //text-align: center;
+  //text-decoration: none;
+  //display: inline-block;
+  //padding: 1.6rem 3.2rem 1.7rem 3.2rem;
+  //font-size: 1.6rem;
+  //background-color: #00afab;
+  //border-color: #99dfdd;
+  //color: #fff;
+  //transition: background-color .3s ease-out;
+  //max-width: 18.1rem;
+
+  margin-top: 2rem;
+  max-width: 18.1rem;
+  margin-bottom: 1rem;
+  display: block;
+  padding: 0 18px;
+  min-width: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.063rem;
+  height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  -webkit-appearance: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  background-color: #00afab;
+  border-color: #99dfdd;
+  color: #fff;
+  transition: background-color .3s ease-out;
+}
+
