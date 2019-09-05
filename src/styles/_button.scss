@@ -37,6 +37,11 @@
     flex: 1 1 0;
     margin-bottom: 10px;
 
+    @include media-query($small, max) {
+        flex: none;
+        width: 28%;
+    }
+
     &--active {
         background-color: $c-lillydoo;
         border: 1px solid $c-lillydoo;
