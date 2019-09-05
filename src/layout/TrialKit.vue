@@ -14,10 +14,11 @@
   </div>
 </template>
 <script>
-import ProductIntro from '@/components/ProductIntro'
-import ProductDetails from '@/components/ProductDetails'
-import ProductSelection from '@/components/ProductSelection'
-import ProductTips from '@/components/ProductTips'
+
+import ProductIntro from '@/components/product/Intro'
+import ProductDetails from '@/components/product/Details'
+import ProductSelection from '@/components/product/Selection'
+import ProductTips from '@/components/product/Tips'
 
 import { trialKits } from './const.js'
 

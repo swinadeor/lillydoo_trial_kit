@@ -29,7 +29,7 @@
 <script>
 
 /**
-   * Product Intro
+   * Product Tips
    *
    */
 
