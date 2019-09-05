@@ -45,7 +45,7 @@
 
 <script>
 
-  /**
+/**
    * Product Selection
    *
    * Renders data
@@ -53,25 +53,25 @@
    *
    */
 
-  export default {
-    name: 'ProductSelection',
-    props: {
-      selectedKit: {
-        index: Number,
-        description: String,
-        img: {
-          src: String,
-          alt: String
-        },
-        active: Boolean,
-        content: Object
+export default {
+  name: 'ProductSelection',
+  props: {
+    selectedKit: {
+      index: Number,
+      description: String,
+      img: {
+        src: String,
+        alt: String
       },
-      trialKits: Array
+      active: Boolean,
+      content: Object
     },
-    methods: {
-      selectKit (trialKitIndex) {
-        this.$emit('updateDetailsContent', trialKitIndex)
-      }
+    trialKits: Array
+  },
+  methods: {
+    selectKit (trialKitIndex) {
+      this.$emit('updateDetailsContent', trialKitIndex)
     }
   }
+}
 </script>

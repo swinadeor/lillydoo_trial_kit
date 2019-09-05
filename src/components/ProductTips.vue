@@ -28,12 +28,12 @@
 </template>
 <script>
 
-  /**
+/**
    * Product Intro
    *
    */
 
-  export default {
-    name: 'ProductTips'
-  }
+export default {
+  name: 'ProductTips'
+}
 </script>

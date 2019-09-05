@@ -38,26 +38,26 @@
 
 <script>
 
-  /**
+/**
    * Product Details
    *
    * Renders data
    *
    */
 
-  export default {
-    name: 'ProductDetails',
-    props: {
-      diaper: {
-        img: String,
-        title: String,
-        details: Array
-      },
-      towel: {
-        img: String,
-        title: String,
-        details: Array
-      }
+export default {
+  name: 'ProductDetails',
+  props: {
+    diaper: {
+      img: String,
+      title: String,
+      details: Array
+    },
+    towel: {
+      img: String,
+      title: String,
+      details: Array
     }
   }
+}
 </script>

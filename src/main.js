@@ -6,9 +6,9 @@ Vue.config.productionTip = false
 
 // VueScrollTo config from docs
 Vue.use(VueScrollTo, {
-  container: "body",
+  container: 'body',
   duration: 900,
-  easing: "ease",
+  easing: 'ease',
   offset: 0,
   force: true,
   cancelable: true,
@@ -20,5 +20,5 @@ Vue.use(VueScrollTo, {
 })
 
 new Vue({
-  render: h => h(App),
+  render: h => h(App)
 }).$mount('#app')

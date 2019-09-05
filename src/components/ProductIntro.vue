@@ -13,12 +13,12 @@
 
 <script>
 
-  /**
+/**
    * Product Intro
    *
    */
 
-  export default {
-    name: 'ProductIntro'
-  }
+export default {
+  name: 'ProductIntro'
+}
 </script>
