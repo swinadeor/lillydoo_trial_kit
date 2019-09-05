@@ -58,31 +58,6 @@ $gap-max-amount: 7;
             margin-left: gap($n);
         }
     }
-
-    // Gap auto
-    .gap {
-        @include prevent-collapsing-margins;
-
-        &-auto {
-            margin: auto;
-        }
-
-        &-top-auto {
-            margin-top: auto;
-        }
-
-        &-right-auto {
-            margin-right: auto;
-        }
-
-        &-bottom-auto {
-            margin-bottom: auto;
-        }
-
-        &-left-auto {
-            margin-left: auto;
-        }
-    }
 }
 
 @include gap-classes;
