@@ -21,6 +21,13 @@
 
   import { trialKits } from './const.js'
 
+  /**
+   * Trial Kit
+   *
+   * Handles the trialKits and passes it down to its children to render the data
+   *
+   */
+
   export default {
     name: 'TrialKit',
     components: {

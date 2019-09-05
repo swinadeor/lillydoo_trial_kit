@@ -18,6 +18,10 @@
     flex-wrap: nowrap;
 }
 
+.justify-content-end {
+    justify-content: flex-end;
+}
+
 .text-align-center {
     text-align: center;
 }
@@ -26,10 +30,10 @@
     text-align: left;
 }
 
-.flex-grow-1 {
-    flex-grow: 1;
-}
-
 .position-relative {
     position: relative;
+}
+
+.padding-top-3 {
+    padding-top: 24px;
 }

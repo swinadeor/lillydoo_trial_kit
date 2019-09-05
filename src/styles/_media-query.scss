@@ -1,0 +1,15 @@
+// Mixin:           media-query
+// Description:     mixin for defining various breakpoints.
+
+// Example usage:    @include media-query($s-medium) { foo: bar; }
+@mixin media-query($breakpoint, $query1: min, $query2: width) {
+    @if $query1 != 'max' {
+        @media only print, screen and (#{$query1}-#{$query2}: $breakpoint / $base-font * 1rem) {
+            @content;
+        }
+    } @else {
+        @media only screen and (#{$query1}-#{$query2}: $breakpoint / $base-font * 1rem) {
+            @content;
+        }
+    }
+}

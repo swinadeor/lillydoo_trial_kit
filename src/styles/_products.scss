@@ -1,0 +1,130 @@
+.product-intro-background {
+    background: url(~@/assets/img/header-trialbox-desktop.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 42rem;
+
+    @include media-query($small, max) {
+        background: url(~@/assets/img/header-trialbox-tablet.jpg) no-repeat center;
+        background-size: cover;
+    }
+}
+
+.info-overlay {
+    align-self: center;
+    background: rgba(255,255,255,.7);
+    justify-self: right;
+    margin-right: 4rem;
+    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+    width: 28.25rem;
+
+    @include media-query($small, max) {
+        align-self: flex-end;
+        margin-right: 0;
+        padding: 2.5rem 1rem 1.5rem 1rem;
+        width: 100%;
+    }
+
+    &__button {
+        max-width: 18.1rem;
+        width: 100%;
+    }
+}
+
+
+.product-selection {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    font-family: cerapro-regular,Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 400;
+
+
+    @include media-query($small, max) {
+        flex-direction: column;
+    }
+
+    &__option {
+        flex: 1 1 0;
+        margin: 15px;
+
+        &--no-space {
+            padding-left: 0;
+        }
+
+        &--left {
+            padding-left: 90px;
+            @include media-query($small, max) {
+                padding-left: 0;
+            }
+        }
+
+        &--relative {
+            position: relative;
+        }
+
+        &--left {
+            text-align: left;
+        }
+
+        &__oekotex-logo {
+            left: 9%;
+            position: absolute;
+            top: 10%;
+            width: 27%;
+        }
+
+        &__img {
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+
+.product-tip-details {
+    &__img {
+        @include media-query($small, max) {
+            width: 20%;
+        }
+    }
+
+    &__title {
+        font-family: cerapro-medium,Helvetica,Roboto,Arial,sans-serif;
+        font-size: 1.063rem;
+        line-height: 1.5;
+    }
+
+    &__description {
+        font-size: .938rem
+    }
+
+}
+
+.product-details {
+    text-align: left;
+
+    &__img {
+        width: 25%;
+
+        @include media-query($small, max) {
+            width: 30%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__title {
+        font-family: cerapro-medium,Helvetica,Roboto,Arial,sans-serif;
+        font-size: 1.063rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        font-size: .938rem;
+        line-height: 1.4;
+        list-style-position: outside;
+    }
+}

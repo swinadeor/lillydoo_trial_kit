@@ -1,4 +1,4 @@
-# Lillydoo Trial Kit
+# LILLYDOO Trial Kit
 
 ## Project setup
 ```
