@@ -1,5 +1,11 @@
 # LILLYDOO Trial Kit
 
+# Quickstart
+
+Requirements to start the project: Node, yarn or npm
+Once you check what was previously mentioned, then proceed to install the dependencies to run the project locally 
+
+
 ## Project setup
 ```
 yarn install
@@ -15,11 +21,6 @@ yarn dev
 yarn build
 ```
 
-### Run your tests
-```
-yarn test
-```
-
 ### Lints and fixes files
 ```
 yarn lint
@@ -27,13 +28,3 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-
-
-### TODO: CHECK Fonts
-
-fonts/foundation-icons.eot
-cera_proregular
-fonts/lillydoo-default-icon-fonts.eot
-/css/webfonts/museo/
-/css/webfonts/cerapro_medium_macroman/CeraPRO-Medium.eot
-/css/webfonts/cerapro_regular_macroman/CeraPRO-Regular.eot
