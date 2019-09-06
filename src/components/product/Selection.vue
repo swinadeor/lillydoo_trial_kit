@@ -16,7 +16,7 @@
       <div class="product-selection__option product-selection__option--left product-selection__option--left flex-nowrap">
         <h2 class="gap-bottom-2">Unser gratis Testpaket</h2>
         <p class="uppercase gap-bottom-2">Wähle deine Größe</p>
-        <div class="gap-bottom-2 flex flex-direction-row text-align-center">
+        <div class="gap-bottom-2 flex flex-direction-row flex-wrap text-align-center">
           <div
             class="option-trial-kit flex flex-direction-col"
             v-for="trialKit in trialKits"
