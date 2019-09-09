@@ -5,7 +5,7 @@
     </div>
     <div class="product-flex section-container">
       <div class="product-flex__content flex flex-direction-row flex-nowrap product-details">
-        <div class="product-details__img gap-right-3">
+        <div class="product-details__img gap-right-3 diaper-details-img">
           <img :src="diaper.img">
         </div>
         <div class="flex flex-direction-col flex-nowrap">
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="product-flex__content flex flex-direction-row flex-nowrap product-details">
-        <div class="product-details__img gap-right-3">
+        <div class="product-details__img gap-right-3 towel-details-img">
           <img :src="towel.img">
         </div>
         <div class="flex flex-direction-col flex-nowrap">
