@@ -62,7 +62,7 @@ export const trialKits = [
     active: false,
     content: {
       diaper: diaper,
-      towel: humidTowel
+      towel: sensitiveTowel
     }
   },
   {
