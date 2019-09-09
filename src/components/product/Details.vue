@@ -12,7 +12,7 @@
           <div>
             <h3 class="product-details__title">{{diaper.title}}</h3>
           </div>
-          <ul>
+          <ul class="product-details__description">
             <li v-for="detail in diaper.details" :key="detail.title">
               {{detail}}
             </li>
@@ -28,7 +28,9 @@
             <h3 class="product-details__title">{{towel.title}}</h3>
           </div>
           <ul class="product-details__description">
-            <li v-for="detail in towel.details" :key="detail.title">{{detail}}</li>
+            <li v-for="detail in towel.details" :key="detail.title">
+              {{detail}}
+            </li>
           </ul>
         </div>
       </div>
